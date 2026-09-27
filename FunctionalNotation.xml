@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<museScore version="1.24">
+
+    <!-- <autoAdjust mag="0.8" adjust="-4.0">1</autoAdjust> -->
+    <font family="default">
+    </font>
+
+    <font family="default">
+        <mag>1.3</mag>
+        <sym name="C" value="T"/>
+        <sym name="F" value="Ś"/>
+        <sym name="G" value="D"/>
+        <sym name="c" value="t"/>
+        <sym name="f" value="s"/>
+        <sym name="g" value="d"/>
+        <!-- <sym name="A" value="S^"/> -->
+        <!-- <sym name="E" value="T^"/> -->
+        <sym name="B" value="L"/>
+        <sym name="D" value="U"/>
+        <sym name="b" value="LL"/>
+        <sym name="d" value="UU"/>
+        <!-- <sym name="a" value="S°"/> -->
+        <!-- <sym name="e" value="T°"/> -->
+        <!-- <sym name="b" value="D°"/> -->
+        <!-- <sym name="/" value="/"/> -->
+    </font>
+
+     <font family="default">
+        <sym name="sT" value="T"/>
+        <sym name="sS" value="Ś"/>
+        <sym name="sD" value="D"/>
+        <sym name="st" value="t"/>
+        <sym name="ss" value="s"/>
+        <sym name="sd" value="d"/>
+    </font>
+
+    <!-- <font family="FreeSans">
+        <sym name="1" code="0x201A"/>
+        <sym name="2" code="0x201E"/>
+        <sym name="3" value="'"/>
+        <sym name="4" code="0x0022"/>
+    </font> -->
+
+    <font family="FreeSans">
+        <mag>0.7</mag>
+        <sym name="sg" value="sg"/>
+        <sym name="sG" value="sG"/>
+        <sym name="str" value="str"/>
+        <sym name="tg" value="tg"/>
+        <sym name="tG" value="tG"/>
+        <sym name="ttr" value="ttr"/>
+        <sym name="dg" value="dg"/>
+        <sym name="dG" value="dG"/>
+        <sym name="dtr" value="dtr"/>
+
+        <sym name="Sg" value="Śg"/>
+        <sym name="SG" value="ŚG"/>
+        <sym name="Str" value="Str"/>
+        <sym name="Tg" value="Tg"/>
+        <sym name="TG" value="TG"/>
+        <sym name="Ttr" value="Ttr"/>
+        <sym name="Dg" value="Dg"/>
+        <sym name="DG" value="DG"/>
+        <sym name="Dtr" value="Dtr"/>
+
+        <sym name="L" value="L"/>
+        <sym name="U" value="U"/>
+
+        <!--<sym code="0x0394" name="triangle"/>--><!-- Greek capital letter delta (Δ) -->
+        <sym code="0x0394" name="triangle"/><!-- White Up-Pointing Triangle (△) -->
+        <!--<sym code="0x03bf" name="circle"/>--><!-- Greek small letter omicron (ο) -->
+        <sym code="0x006f" name="circle"/><!-- Latin small letter ο -->
+        <sym code="0x00f8" name="oslash"/><!-- Latin small letter o with slash (ø) -->
+
+        <sym name="Maj"/>
+        <sym class="accidental" name="b" value="g"/>
+        <sym class="accidental" name="#" value="G"/>
+        <sym class="accidental" name="##" value="tr"/>
+        <sym class="accidental" name="bb" value="tr"/>
+        <sym name="|" value="|"/>
+        <sym name="(" value="("/>
+        <sym name=")" value=")"/>
+        <sym name="." value="."/>
+        <sym code="0x23AF" name="hbar"/>
+    </font>
+
+    <renderRoot>:n :a</renderRoot>
+    <renderFunction>:n :a</renderFunction>
+    <renderBase>m:0:-2 | m:0:2 :n :a </renderBase>
+    <!-- <renderBase>/ m:0:1 :n :a m:0:-1</renderBase> -->
+    
+    <!-- <token class="modifier">
+        <name>S</name>
+        <render>m:0:-3.5 sS</render>
+    </token> -->
+      <token>
+    <name>t</name>
+    <name>^</name>
+    <render>:push m:0:-6 triangle :pop</render>
+    </token>
+
+  <token>
+    <name>o</name>
+    <render>:push m:0:-6 circle :pop</render>
+    </token>
+
+  <token>
+    <name>0</name>
+    <render>:push m:0:-6 oslash :pop</render>
+    </token>
+
+
+
+    <token class="extension">
+        <name>0</name>
+        <render>m:0:-3.5</render>
+    </token>
+    <token class="extension">
+        <name>1</name>
+        <render>1 m:0:-3.5</render>
+    </token>
+    <token class="extension">
+        <name>2</name>
+        <render>2 m:0:-3.5</render>
+    </token>
+    <token class="extension">
+        <name>3</name>
+        <render>3 m:0:-3.5</render>
+    </token>
+    <token class="extension">
+        <name>4</name>
+        <render>4 m:0:-3.5</render>
+    </token>
+    <token class="extension">
+        <name>7</name>
+        <render>7 m:0:-3.5</render>
+    </token>
+
+    <token class="modifier">
+        <name>0</name>
+        <render>m:0:3.5</render>
+    </token>
+    <token class="modifier">
+        <name>1</name>
+        <render>1</render>
+    </token>
+    <token class="modifier">
+        <name>2</name>
+        <render>2</render>
+    </token>
+    <token class="modifier">
+        <name>3</name>
+        <render>3</render>
+    </token>
+    <token class="modifier">
+        <name>4</name>
+        <render>4</render>
+    </token>
+   <!--  <token class="modifier">
+        <name>5</name>
+        <render>m:0:3.5</render>
+    </token> -->
+
+</museScore>

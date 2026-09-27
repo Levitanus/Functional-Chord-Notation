@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE museScore [
+
+<!--
+=====================================================================
+    musescore-serifjazz-chords (rewrite)
+    Copyright (C) 2020 RunasSudo (Yingtong Li)
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+=====================================================================
+-->
+
+  <!ENTITY sup "3.5">
+  <!ENTITY unsup "2.5">
+
+  ]>
+
+<museScore version="1.24">
+
+
+  <font family="default">
+    </font>
+
+  <font family="default">
+    <sym code="0x266d" name="b"/>
+    <sym code="0x266e" name="natural"/>
+    <sym code="0x266f" name="#"/>
+
+    <sym code="0x1d12a" name="##"/>
+    <sym code="0x1d12b" name="bb"/>
+
+    <sym name="/"/>
+    <sym name="+"/>
+
+    </font>
+
+  <font family="default">
+    <mag>1.4</mag>
+
+    <sym code="0x00b0" name="degree"/>
+    <sym code="0x1d1a9" name="oslash"/>
+
+    </font>
+
+  <font family="FreeSans">
+    <mag>0.7</mag>
+
+    <sym value="sus" name="sus"/>
+    <sym value="add" name="sadd"/>
+
+    <sym name="("/>
+    <sym name=")"/>
+    <sym name="M"/>
+    <sym name="Ma"/>
+    <sym name="MA"/>
+    <sym name="Maj"/>
+    <sym name="maj"/>
+    <sym name="m"/>
+    <sym name="min"/>
+    <sym name="MI"/>
+    <sym name="Mi"/>
+    <sym name="mi"/>
+    <sym name="Min"/>
+    <sym name="aug"/>
+    <sym name="Aug"/>
+    <sym name="dim"/>
+    <sym name="Dim"/>
+    <sym name="alt"/>
+    <sym name="Alt"/>
+    <sym name="bass"/>
+    <sym name="Bass"/>
+    <sym name="pedal"/>
+    <sym name="Pedal"/>
+
+    <sym name="no"/>
+    <sym name="omit"/>
+
+    <sym value="0" name="s0"/>
+    <sym value="1" name="s1"/>
+    <sym value="2" name="s2"/>
+    <sym value="3" name="s3"/>
+    <sym value="4" name="s4"/>
+    <sym value="5" name="s5"/>
+    <sym value="6" name="s6"/>
+    <sym value="7" name="s7"/>
+    <sym value="8" name="s8"/>
+    <sym value="9" name="s9"/>
+
+    <sym value="(" name="s("/>
+    <sym value=")" name="s)"/>
+
+    <sym code="0x239b" name="st("/>
+    <sym code="0x239c" name="sm("/>
+    <sym code="0x239d" name="sb("/>
+    <sym code="0x239e" name="st)"/>
+    <sym code="0x239f" name="sm)"/>
+    <sym code="0x23a0" name="sb)"/>
+
+    </font>
+
+  <font family="default">
+    <mag>0.75</mag>
+    <sym code="0x266d" name="sb"/>
+    <sym code="0x266f" name="s#"/>
+
+    </font>
+
+  <font family="default">
+    <mag>0.75</mag>
+
+    <sym value="," name="s,"/>
+    <sym value="/" name="s/"/>
+    <sym value="," name="s,"/>
+    <sym value="/" name="s/"/>
+
+    </font>
+
+
+  <token>
+    <name>o</name>
+    <render>m:0:&unsup; degree m:-1.0:-&unsup;</render>
+    </token>
+  
+  <token>
+    <name>0</name>
+    <render>m:0:&unsup; oslash m:-1.0:-&unsup;</render>
+    </token>
+
+  <token>
+    <name>*</name>
+    <render>m:-1.0:0</render>
+    </token>
+
+  <token>
+    <name>*o</name>
+    <render>m:-2.0:&unsup; degree m:-1.0:-&unsup;</render>
+    </token>
+
+  <token>
+    <name>*h</name>
+    <render>m:-2.0:&unsup; oslash m:-1.0:-&unsup;</render>
+    </token>
+
+  <token class="modifier">
+    <name>add</name>
+    <render>m:0:-&sup; sadd m:0:&sup;</render>
+    </token>
+
+  <token class="modifier">
+    <name>sus</name>
+    <render>m:0:-&sup; sus m:0:&sup;</render>
+    </token>
+
+  <token class="modifier">
+    <name>0</name>
+    <render>m:0:-&sup; s0 m:0:&sup;</render>
+    </token>
+  <token class="modifier">
+    <name>1</name>
+    <render>m:0:-&sup; s1 m:0:&sup;</render>
+    </token>
+  <token class="modifier">
+    <name>2</name>
+    <render>m:0:-&sup; s2 m:0:&sup;</render>
+    </token>
+  <token class="modifier">
+    <name>3</name>
+    <render>m:0:-&sup; s3 m:0:&sup;</render>
+    </token>
+  <token class="modifier">
+    <name>4</name>
+    <render>m:0:-&sup; s4 m:0:&sup;</render>
+    </token>
+  <token class="modifier">
+    <name>5</name>
+    <render>m:0:-&sup; s5 m:0:&sup;</render>
+    </token>
+  <token class="modifier">
+    <name>6</name>
+    <render>m:0:-&sup; s6 m:0:&sup;</render>
+    </token>
+  <token class="modifier">
+    <name>7</name>
+    <render>m:0:-&sup; s7 m:0:&sup;</render>
+    </token>
+  <token class="modifier">
+    <name>8</name>
+    <render>m:0:-&sup; s8 m:0:&sup;</render>
+    </token>
+  <token class="modifier">
+    <name>9</name>
+    <render>m:0:-&sup; s9 m:0:&sup;</render>
+    </token>
+  <token class="modifier">
+    <name>11</name>
+    <render>m:0:-&sup; s1 s1 m:0:&sup;</render>
+    </token>
+  <token class="modifier">
+    <name>13</name>
+    <render>m:0:-&sup; s1 s3 m:0:&sup;</render>
+    </token>
+  <token class="modifier">
+    <name>(</name>
+    <render>m:0:-&sup; s( m:0:&sup;</render>
+    </token>
+  <token class="modifier">
+    <name>)</name>
+    <render>m:0:-&sup; s) m:0:&sup;</render>
+    </token>
+  <token class="modifier">
+    <name>b</name>
+    <render>m:0:-&sup; sb m:0:&sup;</render>
+    </token>
+  <token class="modifier">
+    <name>#</name>
+    <render>m:0:-&sup; s# m:0:&sup;</render>
+    </token>
+  <token class="modifier">
+    <name>no</name>
+    <render>m:0:-&sup; no m:0:&sup;</render>
+    </token>
+  <token class="modifier">
+    <name>omit</name>
+    <render>m:0:-&sup; omit m:0:&sup;</render>
+    </token>
+
+  <token class="extension">
+    <name>0</name>
+    <render>m:0:-&sup; s0 m:0:&sup;</render>
+    </token>
+  <token class="extension">
+    <name>1</name>
+    <render>m:0:-&sup; s1 m:0:&sup;</render>
+    </token>
+  <token class="extension">
+    <name>2</name>
+    <render>m:0:-&sup; s2 m:0:&sup;</render>
+    </token>
+  <token class="extension">
+    <name>3</name>
+    <render>m:0:-&sup; s3 m:0:&sup;</render>
+    </token>
+  <token class="extension">
+    <name>4</name>
+    <render>m:0:-&sup; s4 m:0:&sup;</render>
+    </token>
+  <token class="extension">
+    <name>5</name>
+    <render>m:0:-&sup; s5 m:0:&sup;</render>
+    </token>
+  <token class="extension">
+    <name>6</name>
+    <render>m:0:-&sup; s6 m:0:&sup;</render>
+    </token>
+  <token class="extension">
+    <name>7</name>
+    <render>m:0:-&sup; s7 m:0:&sup;</render>
+    </token>
+  <token class="extension">
+    <name>8</name>
+    <render>m:0:-&sup; s8 m:0:&sup;</render>
+    </token>
+  <token class="extension">
+    <name>9</name>
+    <render>m:0:-&sup; s9 m:0:&sup;</render>
+    </token>
+  <token class="extension">
+    <name>11</name>
+    <render>m:0:-&sup; s1 s1 m:0:&sup;</render>
+    </token>
+  <token class="extension">
+    <name>13</name>
+    <render>m:0:-&sup; s1 s3 m:0:&sup;</render>
+    </token>
+  
+  <token class="extension">
+    <name>6/9</name>
+    <render>m:0:-&sup; s6 m:-0.5:&sup; m:0:-0.5 / m:-0.5:0.5 s9</render>
+    </token>
+
+  <renderRoot>:n :a</renderRoot>
+  <renderBase>m:-0.2:1 / m:0.2:1 :n :a m:0:-2</renderBase>
+
+
+
+
+  <chord>
+    <name>add9</name>
+    <render>m:0:-&sup; s( sadd s9 s) m:0:&sup;</render>
+    </chord>
+
+  <chord>
+    <name>madd9</name>
+    <render>m m:0:-&sup; s( sadd s9 s) m:0:&sup;</render>
+    </chord>
+
+  <chord>
+    <name>mmaj7</name>
+    <render>m m:0:-&sup; s( maj s7 s) m:0:&sup;</render>
+    </chord>
+
+  <chord>
+    <name>m6maj7</name>
+    <render>m m:0:-&sup; s6 s( maj s7 s) m:0:&sup;</render>
+    </chord>
+
+  <chord>
+    <name>m9maj7</name>
+    <render>m m:0:-&sup; s9 s( maj s7 s) m:0:&sup;</render>
+    </chord>
+
+  <chord>
+    <name>+maj7</name>
+    <render>+ m:0:-&sup; s( maj s7 s) m:0:&sup;</render>
+    </chord>
+
+  <chord>
+    <name>+9maj7</name>
+    <render>+ m:0:-&sup; s9 s( maj s7 s) m:0:&sup;</render>
+    </chord>
+
+  <chord>
+    <name>omaj7</name>
+    <render>m:0:&unsup; degree m:-1.0:-&unsup; m:0:-&sup; s( maj s7 s) m:0:&sup;</render>
+    </chord>
+
+  <chord>
+    <name>mb5</name>
+    <render>m m:0:-&sup; s( sb s5 s) m:0:&sup;</render>
+    </chord>
+
+  <chord>
+    <name>7b5</name>
+    <render>m:0:-&sup; s7 s( sb s5 s) m:0:&sup;</render>
+    </chord>
+
+  <chord>
+    <name>m7b5</name>
+    <render>m m:0:-&sup; s7 s( sb s5 s) m:0:&sup;</render>
+    </chord>
+
+  <chord>
+    <name>9b5</name>
+    <render>m:0:-&sup; s9 s( sb s5 s) m:0:&sup;</render>
+    </chord>
+
+  <chord>
+    <name>m9b5</name>
+    <render>m m:0:-&sup; s9 s( sb s5 s) m:0:&sup;</render>
+    </chord>
+
+  <chord>
+    <name>7b9</name>
+    <render>m:0:-&sup; s7 s( sb s9 s) m:0:&sup;</render>
+    </chord>
+
+  <chord>
+    <name>m7b9</name>
+    <render>m m:0:-&sup; s7 s( sb s9 s) m:0:&sup;</render>
+    </chord>
+
+  <chord>
+    <name>7#9</name>
+    <render>m:0:-&sup; s7 s( s# s9 s) m:0:&sup;</render>
+    </chord>
+
+
+
+
+
+  <chord>
+    <name>b9#5</name>
+    <render>m:0:-&sup; m:1:5 :push m:0:-10 st( :pop :push m:0:-5 sm( :pop sb( :push m:0:-10 sb s9 :pop s# s5 :push m:0:-10 st) :pop :push m:0:-5 sm) :pop sb) m:0:-5 m:0:&sup;</render>
+    </chord>
+
+  <chord>
+    <name>7#9b5</name>
+    <render>m:0:-&sup; s7 m:1:5 :push m:0:-10 st( :pop :push m:0:-5 sm( :pop sb( :push m:0:-10 s# s9 :pop sb s5 :push m:0:-10 st) :pop :push m:0:-5 sm) :pop sb) m:0:-5 m:0:&sup;</render>
+    </chord>
+
+  <chord>
+    <name>7b9#5</name>
+    <render>m:0:-&sup; s7 m:1:5 :push m:0:-10 st( :pop :push m:0:-5 sm( :pop sb( :push m:0:-10 sb s9 :pop s# s5 :push m:0:-10 st) :pop :push m:0:-5 sm) :pop sb) m:0:-5 m:0:&sup;</render>
+    </chord>
+
+  <chord>
+    <name>7b9b5</name>
+    <render>m:0:-&sup; s7 m:1:5 :push m:0:-10 st( :pop :push m:0:-5 sm( :pop sb( :push m:0:-10 sb s9 :pop sb s5 :push m:0:-10 st) :pop :push m:0:-5 sm) :pop sb) m:0:-5 m:0:&sup;</render>
+    </chord>
+
+  <chord>
+    <name>m7b9b5</name>
+    <render>m m:0:-&sup; s7 m:1:5 :push m:0:-10 st( :pop :push m:0:-5 sm( :pop sb( :push m:0:-10 sb s9 :pop sb s5 :push m:0:-10 st) :pop :push m:0:-5 sm) :pop sb) m:0:-5 m:0:&sup;</render>
+    </chord>
+
+  <chord>
+    <name>+7b9</name>
+    <render>+ m:0:-&sup; s7 s( sb s9 s) m:0:&sup;</render>
+    </chord>
+
+  <chord>
+    <name>+7#9</name>
+    <render>+ m:0:-&sup; s7 s( s# s9 s) m:0:&sup;</render>
+    </chord>
+
+  <chord>
+    <name>9#11</name>
+    <render>m:0:-&sup; s9 s( s# s1 s1 s) m:0:&sup;</render>
+    </chord>
+
+  <chord>
+    <name>m9#11</name>
+    <render>m m:0:-&sup; s9 s( s# s1 s1 s) m:0:&sup;</render>
+    </chord>
+
+  <chord>
+    <name>7b13b9</name>
+    <render>m:0:-&sup; s7 m:1:5 :push m:0:-10 st( :pop :push m:0:-5 sm( :pop sb( :push m:0:-10 sb s1 s3 :pop m:2:0 sb s9 m:2:0 :push m:0:-10 st) :pop :push m:0:-5 sm) :pop sb) m:0:-5 m:0:&sup;</render>
+    </chord>
+
+  <chord>
+    <name>7#11b9</name>
+    <render>m:0:-&sup; s7 m:1:5 :push m:0:-10 st( :pop :push m:0:-5 sm( :pop sb( :push m:0:-10 s# s1 s1 :pop m:2:0 sb s9 m:2:0 :push m:0:-10 st) :pop :push m:0:-5 sm) :pop sb) m:0:-5 m:0:&sup;</render>
+    </chord>
+
+  <chord>
+    <name>m7#11b9</name>
+    <render>m m:0:-&sup; s7 m:1:5 :push m:0:-10 st( :pop :push m:0:-5 sm( :pop sb( :push m:0:-10 s# s1 s1 :pop m:2:0 sb s9 m:2:0 :push m:0:-10 st) :pop :push m:0:-5 sm) :pop sb) m:0:-5 m:0:&sup;</render>
+    </chord>
+
+  <chord>
+    <name>+7#11b9</name>
+    <render>+ m:0:-&sup; s7 m:1:5 :push m:0:-10 st( :pop :push m:0:-5 sm( :pop sb( :push m:0:-10 s# s1 s1 :pop m:2:0 sb s9 m:2:0 :push m:0:-10 st) :pop :push m:0:-5 sm) :pop sb) m:0:-5 m:0:&sup;</render>
+    </chord>
+
+
+
+  </museScore>
