@@ -13,4 +13,4 @@
 
 You can use provided \*.mscz file as reference.
 
-![example notation](/home/levitanus/gits/Functional-Chord-Notation/Functional_Notation-2.png)
+![example notation](Functional_Notation-2.png)
