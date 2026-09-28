@@ -8,6 +8,8 @@
     <font family="default">
         <mag>1.3</mag>
         <sym name="C" value="T"/>
+        <!-- <sym name="F" code="0x1E60"/> -->
+        <!-- <sym name="F" code="0x015A"/> -->
         <sym name="F" value="Ś"/>
         <sym name="G" value="D"/>
         <sym name="c" value="t"/>
@@ -44,6 +46,8 @@
         <sym name="ss" value="s"/>
         <sym name="sd" value="d"/>
         <sym name=">" value="→"/>
+        <!-- <sym name="L>" value="L→"/>
+        <sym name="U>" value="U→"/> -->
     </font>
 
     <!-- <font family="FreeSans">
