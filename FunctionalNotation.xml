@@ -13,16 +13,27 @@
         <sym name="c" value="t"/>
         <sym name="f" value="s"/>
         <sym name="g" value="d"/>
-        <!-- <sym name="A" value="S^"/> -->
-        <!-- <sym name="E" value="T^"/> -->
+        <!-- <sym name="A" value=""/> -->
+        <sym name="E" value=" "/>
         <sym name="B" value="L"/>
         <sym name="D" value="U"/>
-        <sym name="b" value="LL"/>
-        <sym name="d" value="UU"/>
+        <!-- <sym name="b" value="LL"/> -->
+        <!-- <sym name="d" value="UU"/> -->
         <!-- <sym name="a" value="S°"/> -->
         <!-- <sym name="e" value="T°"/> -->
         <!-- <sym name="b" value="D°"/> -->
         <!-- <sym name="/" value="/"/> -->
+        <sym name="1" value="1"/>
+        <sym name="2" value="2"/>
+        <sym name="3" value="3"/>
+        <sym name="4" value="4"/>
+        <sym name="5" value="5"/>
+        <sym name="6" value="6"/>
+        <sym name="7" value="7"/>
+        <sym name="8" value="8"/>
+        <sym name="9" value="9"/>
+        <sym name="10" value="10"/>
+        <sym name="11" value="11"/>
     </font>
 
      <font family="default">
@@ -32,6 +43,7 @@
         <sym name="st" value="t"/>
         <sym name="ss" value="s"/>
         <sym name="sd" value="d"/>
+        <sym name=">" value="→"/>
     </font>
 
     <!-- <font family="FreeSans">
@@ -82,36 +94,67 @@
         <sym name=")" value=")"/>
         <sym name="." value="."/>
         <sym code="0x23AF" name="hbar"/>
+        <!-- <sym name="goup" value="m:0:-3.5"/>
+        <sym name="godwn" value="m:0:3.5"/> -->
+    </font>
+
+    <font family="default" class="extension">
+        <sym name="1" value="1"/>
+        <sym name="2" value="2"/>
+        <sym name="3" value="3"/>
+        <sym name="4" value="4"/>
+        <sym name="5" value="5"/>
+        <sym name="6" value="6"/>
+        <sym name="7" value="7"/>
+        <sym name="8" value="8"/>
+        <sym name="9" value="9"/>
+        <sym name="10" value="10"/>
+        <sym name="11" value="11"/>
     </font>
 
     <renderRoot>:n :a</renderRoot>
-    <renderFunction>:n :a</renderFunction>
-    <renderBase>m:0:-2 | m:0:2 :n :a </renderBase>
-    <!-- <renderBase>/ m:0:1 :n :a m:0:-1</renderBase> -->
+    <renderFunction>:a m:0.5:0 :n</renderFunction>
+    <!-- <renderFunction>:n :a</renderFunction> -->
+    <!-- <renderBase>m:0:-2 | m:0:2 :n :a </renderBase> -->
+    <renderBase>:push m:-6:1 __ :pop :push m:-6:10 :n :a :pop</renderBase>
     
     <!-- <token class="modifier">
         <name>S</name>
         <render>m:0:-3.5 sS</render>
     </token> -->
-      <token>
-    <name>t</name>
-    <name>^</name>
-    <render>:push m:0:-6 triangle :pop</render>
+    <token>
+        <name>t</name>
+        <name>^</name>
+        <render>m:0:-6 triangle m:0:6</render>
     </token>
 
-  <token>
-    <name>o</name>
-    <render>:push m:0:-6 circle :pop</render>
+    <token>
+        <name>o</name>
+        <render>m:0:-6 circle m:0:6</render>
     </token>
 
-  <token>
-    <name>0</name>
-    <render>:push m:0:-6 oslash :pop</render>
+    <token>
+        <name>0</name>
+        <render>m:0:-6 oslash m:0:6</render>
     </token>
+    <!-- <token>
+        <name>></name>
+        <render>m:0:-3 > m:0:3</render>
+    </token> -->
+    
+
+    <!-- <token>
+        <name>goup</name>
+        <render>m:0:-3.5</render>
+    </token>
+    <token>
+        <name>godwn</name>
+        <render>m:0:3.5</render>
+    </token> -->
 
 
 
-    <token class="extension">
+    <!-- <token class="extension">
         <name>0</name>
         <render>m:0:-3.5</render>
     </token>
@@ -130,13 +173,13 @@
     <token class="extension">
         <name>4</name>
         <render>4 m:0:-3.5</render>
-    </token>
-    <token class="extension">
+    </token> -->
+    <!-- <token class="extension">
         <name>7</name>
         <render>7 m:0:-3.5</render>
-    </token>
+    </token> -->
 
-    <token class="modifier">
+    <!-- <token class="modifier">
         <name>0</name>
         <render>m:0:3.5</render>
     </token>
@@ -155,10 +198,106 @@
     <token class="modifier">
         <name>4</name>
         <render>4</render>
-    </token>
+    </token> -->
    <!--  <token class="modifier">
         <name>5</name>
         <render>m:0:3.5</render>
     </token> -->
+
+    <token class="extension">
+        <name>1</name>
+        <render></render>
+    </token>
+    <token class="extension">
+        <name>0</name>
+        <render>m:0:-6 oslash m:0:6</render>
+    </token>
+
+    <token class="modifier">
+        <name>U</name>
+        <render>m:0:-3.5 U m:0:3.5</render>
+    </token>
+    <token class="modifier">
+        <name>L</name>
+        <render>m:0:-3.5 L m:0:3.5</render>
+    </token>
+    <token class="modifier">
+        <name>T</name>
+        <render>m:0:-3.5 T m:0:3.5</render>
+    </token>
+    <token class="modifier">
+        <name>D</name>
+        <render>m:0:-3.5 D m:0:3.5</render>
+    </token>
+    <token class="modifier">
+        <name>S</name>
+        <render>m:0:-3.5 S m:0:3.5</render>
+    </token>
+    <token class="modifier">
+        <name>t</name>
+        <render>m:0:-3.5 t m:0:3.5</render>
+    </token>
+    <token class="modifier">
+        <name>d</name>
+        <render>m:0:-3.5 d m:0:3.5</render>
+    </token>
+    <token class="modifier">
+        <name>s</name>
+        <render>m:0:-3.5 s m:0:3.5</render>
+    </token>
+
+
+    <token class="modifier">
+        <name>+</name>
+        <render>m:0:-3.5 + m:0:3.5</render>
+    </token>
+    <token class="modifier">
+        <name>-</name>
+        <render>m:0:-3.5 - m:0:3.5</render>
+    </token>
+    <token class="modifier">
+        <name>1</name>
+        <render>m:0:-3.5 1 m:0:3.5</render>
+    </token>
+    <token class="modifier">
+        <name>2</name>
+        <render>m:0:-3.5 2 m:0:3.5</render>
+    </token>
+    <token class="modifier">
+        <name>3</name>
+        <render>m:0:-3.5 3 m:0:3.5</render>
+    </token>
+    <token class="modifier">
+        <name>4</name>
+        <render>m:0:-3.5 4 m:0:3.5</render>
+    </token>
+    <token class="modifier">
+        <name>5</name>
+        <render>m:0:-3.5 5 m:0:3.5</render>
+    </token>
+    <token class="modifier">
+        <name>6</name>
+        <render>m:0:-3.5 6 m:0:3.5</render>
+    </token>
+    <token class="modifier">
+        <name>7</name>
+        <render>m:0:-3.5 7 m:0:3.5</render>
+    </token>
+    <token class="modifier">
+        <name>8</name>
+        <render>m:0:-3.5 8 m:0:3.5</render>
+    </token>
+    <token class="modifier">
+        <name>9</name>
+        <render>m:0:-3.5 9 m:0:3.5</render>
+    </token>
+    <token class="modifier">
+        <name>10</name>
+        <render>m:0:-3.5 10 m:0:3.5</render>
+    </token>
+    <token class="modifier">
+        <name>11</name>
+        <render>m:0:-3.5 11 m:0:3.5</render>
+    </token>
 
 </museScore>
